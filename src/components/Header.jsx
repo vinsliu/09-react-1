@@ -12,10 +12,8 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto align-items-center">
-              {match ? (
+              {match && (
                 <p className="m-0">Catégorie : {match.params.categoryId}</p>
-              ) : (
-                ""
               )}
             </Nav>
             <Nav className="ms-auto align-items-center">
