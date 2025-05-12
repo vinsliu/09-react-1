@@ -1,4 +1,12 @@
+import { Navbar } from "react-bootstrap";
+
 function Footer() {
-  return <p>Footer</p>;
+  return (
+    <footer className="bg-dark">
+      <Navbar className="justify-content-center">
+        <Navbar.Text className="text-light">Footer</Navbar.Text>
+      </Navbar>
+    </footer>
+  );
 }
 export default Footer;
