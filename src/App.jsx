@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import "./App.css";
 import Layout from "./components/Layout";
 import Category from "./pages/Category";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/category/:categoryId" element={<Category />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
