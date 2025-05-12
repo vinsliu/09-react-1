@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <main>
+      <main className="my-2">
         <Container>
           <Outlet />
         </Container>
