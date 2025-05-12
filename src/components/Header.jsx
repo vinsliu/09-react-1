@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
+import "./header.css";
 
 function Header() {
   return (
@@ -12,13 +13,13 @@ function Header() {
             className="justify-content-end"
           >
             <Nav>
-              <Nav.Link to="/" as={Link}>
+              <Nav.Link to="/" as={NavLink}>
                 Accueil
               </Nav.Link>
-              <Nav.Link to="/category/vetements" as={Link}>
+              <Nav.Link to="/category/vetements" as={NavLink}>
                 Vêtements
               </Nav.Link>
-              <Nav.Link to="/category/chaussures" as={Link}>
+              <Nav.Link to="/category/chaussures" as={NavLink}>
                 Chaussures
               </Nav.Link>
             </Nav>
